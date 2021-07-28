@@ -1,0 +1,29 @@
+@media screen and (max-width:780px){
+    .desktop-menu{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .product,.products{
+        width: 100%;
+        padding: 7px 0;
+    }
+    .topProC{
+        background-size: auto 100%;
+    }
+}
+@media screen and (min-width:1550px) {
+    .top-product{
+        height: 692px;
+    }
+    .topProA{
+        background-image: url("../assets/iphone_12_updated__jepm2xpxncuy_largetall.jpg");
+    }
+    .topProB{
+        background-image: url("../assets/iphone_12_pro_us__e5oyysg4k0ya_largetall.jpg");
+    }
+    .topProC{
+        background-size: auto 100%;
+    }
+}

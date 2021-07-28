@@ -1,0 +1,355 @@
+/* ============================================================================= */
+/* =================================== Fonts =================================== */
+/* ============================================================================= */
+
+@font-face {
+    font-family: "SF Pro Icons Regular";
+    src: url("../assets/sf-pro-icons_regular.woff2");
+}
+@font-face {
+    font-family: "SF Pro Text Regular";
+    src: url("../assets/sf-pro-text_regular.woff2");
+}
+@font-face {
+    font-family: "SF Pro Text Semibold";
+    src: url("../assets/sf-pro-text_semibold.woff2");
+}
+/* =============================================================================== */
+/* =================================== Default =================================== */
+/* =============================================================================== */
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+body{
+    font-style: normal;
+    overflow-x: hidden;
+    position: relative;
+    font-size: 17px;
+    font-family: "SF Pro Text Regular","Arial",sans-serif;
+    background-color: #fff;
+    color: #1d1d1f;
+    line-height: 1.47059;
+    font-weight: 400;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.preLink{
+    color: #06c;
+}
+.fooLink{
+    color: #515154;
+}
+.preLink:hover,.fooLink:hover{
+    text-decoration: underline;
+}
+/* =================================================================================== */
+/* =================================== Main Header =================================== */
+/* =================================================================================== */
+.main-header{
+    background: #000000cc;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+.main-nav{
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 12px;
+}
+.main-nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.navLink{
+    /* padding: 0 10px; */
+    line-height: 44px;
+    color: #f5f5f7;
+    opacity: 0.8;
+    transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    font-size: 14px;
+    height: 44px;
+    display: block;
+    font-family: "SF Pro Text Regular","Arial",sans-serif;
+    font-weight: 400;
+    margin: 0 10px;
+}
+.navLink:hover{
+    opacity: 1;
+}
+.menu{
+    width: 30px;
+    height: 30px;
+    background: url("../assets/mobile-menu.svg") center center no-repeat;
+    background-size: 50%;
+    margin-left: 0 !important;
+}
+.mobile-menu{
+    display: none;
+}
+.logo-nav{
+    background: url("../assets/globalnav_apple_image__cxwwnrj0urau_large.svg") no-repeat center center;
+    background-size: 16px 44px;
+    width: 16px;
+}
+.search-nav{
+    background: url("../assets/globalnav_search_image__fca9mfoh8a2q_large.svg") no-repeat;
+    background-size: 18px 88px;
+    width: 18px;
+}
+.shop-nav{
+    background: url("../assets/globalnav_bag_image__bmix8075eg4i_large.svg") no-repeat center center;
+    background-size: 17px 44px;
+    width: 17px;
+}
+/* ---------------- main content ---------------- */
+.mian-content{
+    padding-top: 44px;
+    max-width: 2560px;
+    margin: 0 auto;
+}
+.alert{
+    font-size: 14px;
+    padding: 12px 0;
+    background-color: #f5f5f7;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    color: #1d1d1f;
+    font-style: normal;
+}
+/* ============================================================== */
+/* ======================== Top Products ======================== */
+/* ============================================================== */
+.top-products{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+.top-product{
+    width: 100%;
+    height: 580px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-top: 47px;
+    margin-bottom: 12px;
+}
+.top-product>a{
+    font-size: 21px;
+    line-height: 1.381;
+    margin: 0 17.5px;
+}
+.top-product>a::after{
+    content: "\F301";
+    padding-left: .3em;
+    font-family: "SF Pro Icons Regular";
+    text-decoration: none;
+    display: inline-block;
+}
+.top-product>h2{
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+}
+.top-product>h3{
+    font-size: 28px;
+    line-height: 1.10722;
+    font-weight: 400;
+    letter-spacing: .004em;
+    margin: 6px 0;
+}
+.top-product>p{
+    margin-top: .8em;
+    margin-bottom: 0.65em;
+    color: #86868b;
+}
+.topProA{
+    background-color: #fbfbfd;
+    background-image: url("../assets/iphone_12_updated__jepm2xpxncuy_large.jpg");
+}
+.topProB{
+    background-color: black;
+    background-image: url("../assets/iphone_12_pro_us__e5oyysg4k0ya_large.jpg");
+}
+.topProC{
+    background-color: black;
+    background-image: url("../assets/hero_ipad_pro_non_avail__fcrsmhs4b7ma_large.jpg");
+}
+.topProB>h2{
+    color: white;
+    font-size: 50px;
+}
+.topProC>h2{
+    color: #f5f5f7;
+}
+.topProA>h3{
+    color: #1d1d1f;
+}
+.topProC>h3{
+    color: #f5f5f7;
+}
+.topProB>h3{
+    color: white;
+}
+.topProB>a,.topProC>a{
+    color: #2997ff;
+}
+/* ============================================================== */
+/* ========================== Products ========================== */
+/* ============================================================== */
+.products{
+    display: flex;
+    flex-flow: wrap;
+    padding: 7px;
+    margin-top: -12px;
+}
+.product{
+    padding: 7px;
+    width: 50%;
+    height: 580px;
+}
+.product>div{
+    width: 100%;
+    height: 100%;
+    background-size: 1262px 580px;
+    background-repeat: no-repeat;
+    background-position: center -15px;
+    position: relative;
+    text-align: center;
+    padding-top: 53px;
+}
+.product>div>h2{
+    font-size: 40px;
+}
+.productA{
+    background-image: url("../assets/promo_imac__crg641tip4q6_large.jpg");
+}
+.productB{
+    background-image: url("../assets/promo_watch_international_collection__doumy2y89m4i_large.jpg");
+}
+.productC{
+    background-image: url("../assets/promo_bts__bg3cb4kaoqoi_large.jpg");
+}
+.productD{
+    background-image: url("../assets/promo_bts_behind_the_mac__gkohb7o4e2ai_large.jpg");
+}
+.productE{
+    background-image: url("../assets/tile__cauwwcyyn9hy_large.jpg");
+}
+.productF{
+    background-image: url("../assets/promo_fathom__gcsf1ydc8wyi_large.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.productF>img{
+    width: 100px;
+    margin-bottom: 30px;
+}
+.productF>a{
+    color: white;
+    margin-bottom: 50px;
+}
+/* =================================================================================== */
+/* =================================== Main Footer =================================== */
+/* =================================================================================== */
+.mianFooter{
+    background-color: #f5f5f7;
+}
+.footerC{
+    margin: 0 auto;
+    max-width: 980px;
+}
+.footerDiscription{
+    border-bottom: 1px solid #d2d2d7;
+    color: #86868b;
+    padding: 17px 0 11px;
+    font-size: 12px;
+}
+.footerDiscription>p{
+    padding-bottom: 0.8em;
+}
+.footerDiscription>p>a,.navFooterLinks>ul>li>a{
+    color: #515154;
+    text-decoration: none;
+}
+.footerDiscription>p>a:hover,.navFooterLinks>ul>li>a:hover{
+    color: #1d1d1f;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.navFooter{
+    display: flex;
+    padding-top: 20px;
+}
+.navFooterLinks{
+    color: #86868b;
+    font-size: 12px;
+    width: 20%;
+}
+.navFooterLinks>h3{
+    color: #1d1d1fcb;
+    font-size: 12px;
+}
+.navFooterLinks>ul>li,.navFooterLinks>h3{
+    margin-bottom: .8em;
+}
+
+.footerEnd{
+    padding: 34px 0 21px 0;
+    font-size: 12px;
+    color: #86868b;
+}
+.more{
+    margin-bottom: 7px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d2d2d7;
+}
+.more > a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.copyright{
+    display: flex;
+    width: 100%;
+    padding-top: 2px;
+}
+.copyright > p {
+    margin-right: 30px;
+}
+.copyright > ul{
+    display: flex;
+    flex-grow: 1;
+}
+.copyright > ul > li > a,.copyright > a{
+    border-right: 1px solid #d2d2d7;
+    margin-right: 7px;
+    padding-right: 10px;
+    color: #515154;
+}
+.copyright > ul > li > a:hover,.copyright > a:hover{
+    color: #1d1d1f;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.copyright > a{
+    margin-right: 0;
+    padding-right: 0;
+}
